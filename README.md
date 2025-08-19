@@ -86,50 +86,62 @@ LLM_FROM_SCRATCH/
 
 **Complete Text Processing Pipeline**
 
-    * Implemented different tokenization strategies and used Byte Pair Encoding(BPE) tokenizer which is compatible with GPT-2.
-    * Created efficient data loading and batching mechanisms
-    * Built vocabulary management and special tokens handling
+Implemented different tokenization strategies and used Byte Pair Encoding(BPE) tokenizer which is compatible with GPT-2.
+
+Created efficient data loading and batching mechanisms
+
+Built vocabulary management and special tokens handling
 
 **Attention Mechanism Implementations**
 
-    * Built foundational to advanced attention systems from simple dot-product to sophisticated multi-head architectures
+Built foundational to advanced attention systems from simple dot-product to sophisticated multi-head architectures
 
-    * Implemented causal masking to enable autoregressive properties essential for GPT models
+Implemented causal masking to enable autoregressive properties essential for GPT models
 
-    * Created efficient multi-head processing with proper tensor reshaping and parallel computation
+Created efficient multi-head processing with proper tensor reshaping and parallel computation
 
-    * Added dropout regularization to attention weights for improved model generalization
+Added dropout regularization to attention weights for improved model generalization
 
-    * Achieved OpenAI compatibility in attention patterns and output behavior
+Achieved OpenAI compatibility in attention patterns and output behavior
 
 **GPT Architecture Implementation**
 
-    * FeedForward Block: 
-    I implemented a position-wise feedforward network with GELU activation that expands the hidden dimension by 4x according to GPT-2 specifications.
+FeedForward Block: 
 
-    * Shortcut Connections: 
-    I achieved stable gradient flow in deep networks by coding residual skip connections around both attention and feedforward layers.
+I implemented a position-wise feedforward network with GELU activation that expands the hidden dimension by 4x according to GPT-2 specifications.
 
-    * Dropout Regularization:
-    I implemented targeted dropout on attention weights and hidden layers to reduce overfitting and improve model generalization.
+Shortcut Connections: 
 
-    * Transformer Block: 
-    I coded a complete transformer decoder block that integrates masked multi-head self-attention and feedforward networks with residual connections.
+I achieved stable gradient flow in deep networks by coding residual skip connections around both attention and feedforward layers.
 
-    * Text Generation: 
-    I coded multiple decoding strategies including temperature scaling and top-k sampling for diverse text generation.
+Dropout Regularization:
 
-    * GPTModel Class:
-    I built the complete GPT-2 architecture by stacking transformer blocks and implementing weight-tied embedding layers.
+I implemented targeted dropout on attention weights and hidden layers to reduce overfitting and improve model generalization.
+
+Transformer Block: 
+
+I coded a complete transformer decoder block that integrates masked multi-head self-attention and feedforward networks with residual connections.
+
+Text Generation: 
+
+I coded multiple decoding strategies including temperature scaling and top-k sampling for diverse text generation.
+
+GPTModel Class:
+
+I built the complete GPT-2 architecture by stacking transformer blocks and implementing weight-tied embedding layers.
 
 **Model training and evaluation**
-    * Model Training Loop: 
-    I developed a full training loop with gradient accumulation, mixed precision support, and comprehensive logging.
-    * Model evaluation:
-    I used multiple metrics to evaluate the LLM training including cross-entropy loss and perplexity.
+
+Model Training Loop: 
+
+I developed a full training loop with gradient accumulation, mixed precision support, and comprehensive logging.
+
+Model evaluation:
+
+I used multiple metrics to evaluate the LLM training including cross-entropy loss and perplexity.
 
 **Public OpenAI GPT-2 weights integration**
-    * I successfully downloaded OpenAI's pre-trained GPT-2 weights and correctly mapped them to my from-scratch implemented architecture.
+I successfully downloaded OpenAI's pre-trained GPT-2 weights and correctly mapped them to my from-scratch implemented architecture.
 
 
 
