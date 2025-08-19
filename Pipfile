@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 tiktoken = "==0.9"
 torch = "*"
+tensorflow = "*"
+tqdm = "*"
 
 [dev-packages]
 ipykernel = "*"
